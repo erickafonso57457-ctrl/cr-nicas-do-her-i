@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As Crônicas do Herói da Floresta</title>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:
+radial-gradient(circle at center,#352016 0%, #120b08 60%, #000 100%);
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Special Elite', cursive;
+}
+
+#book{
+width:95vw;
+max-width:1000px;
+height:90vh;
+max-height:720px;
+filter:drop-shadow(0 0 30px rgba(0,0,0,0.8));
+}
+
+.page{
+background:
+linear-gradient(to bottom,#f5ebcf,#e2d1ac);
+color:#2b1a12;
+padding:60px 50px;
+position:relative;
+overflow:hidden;
+background-image:
+radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+background-size:4px 4px;
+}
+
+.page::before{
+content:'';
+position:absolute;
+inset:0;
+pointer-events:none;
+box-shadow:inset 0 0 80px rgba(0,0,0,0.2);
+}
+
+.cover{
+background:
+linear-gradient(135deg,#3d2419,#1b0f0b);
+color:#d9d0c0;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.cover::before{
+content:'';
+position:absolute;
+inset:15px;
+border:3px solid rgba(180,180,180,0.4);
+pointer-events:none;
+}
+
+.cover::after{
+content:'✶ ☽ ⟁ ☿ ✶';
+position:absolute;
+top:30px;
+letter-spacing:15px;
+font-size:26px;
+opacity:0.4;
+}
+
+.cover h1{
+font-family:'Cinzel', serif;
+font-size:clamp(28px,4vw,55px);
+line-height:1.3;
+}
+
+.chapter{
+font-family:'Cinzel', serif;
+text-align:center;
+font-size:clamp(20px,2vw,32px);
+margin-bottom:40px;
+color:#46261c;
+}
+
+.status{
+font-size:16px;
+letter-spacing:4px;
+margin-top:12px;
+opacity:0.8;
+}
+
+.success{
+color:#305d2b;
+}
+
+.fail{
+color:#7d1818;
+}
+
+.content{
+font-size:17px;
+line-height:1.9;
+white-space:pre-line;
+}
+
+.blood{
+background:
+linear-gradient(to bottom,#390707,#110101);
+color:#e6bfbf;
+}
+
+.blood .content{
+color:#ffdfdf;
+}
+
+.torn{
+background:#181310;
+}
+
+.glitch{
+animation:glitch 0.12s infinite alternate;
+}
+
+@keyframes glitch{
+from{transform:translate(1px,-1px);}
+to{transform:translate(-1px,1px);}
+}
+
+.end{
+background:
+linear-gradient(to bottom,#0b0b0b,#1a0e0e);
+color:#d8c7c7;
+}
+
+.hint{
+position:fixed;
+bottom:18px;
+color:#c4b6a8;
+font-size:13px;
+letter-spacing:2px;
+opacity:0.7;
+}
+
+@media(max-width:768px){
+
+.page{
+padding:35px 28px;
+}
+
+.content{
+font-size:15px;
+line-height:1.7;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div id="book">
+
+<div class="page cover">
+<h1>
+As Crônicas<br>
+do Herói da Floresta
+</h1>
+</div>
+
+<div class="page">
+<div class="chapter">
+O herói vem a esse mundo
+<div class="status success">✦ SINAL DE SUCESSO ✦</div>
+</div>
+
+<div class="content">
+Início aos testes, vamos submeter o herói ao começo de seus testes.
+
+Às 10 horas em ponto começaremos o primeiro ritual de transcendência.
+
+O colocamos em quarentena numa sala de duas guias com um zumbi de sangue.
+
+Após 3 dias o herói finalmente entrou em estado de choque anafilático.
+
+O medo que ele possuía da criatura coexistia com algo que classificamos como fascínio.
+
+As manifestações do outro lado dispararam no setor.
+
+Encerramos os testes para evitar mais baixas.
+
+A transcendência começará amanhã.
+</div>
+</div>
+
+<div class="page">
+<div class="chapter">
+O herói e sua espada sagrada
+<div class="status fail">✦ SINAL DE FALHA ✦</div>
+</div>
+
+<div class="content">
+Utilizamos um círculo pequeno de transcendência desenhado por um agente Iron.
+
+Drogas foram aplicadas para aumentar a concentração da cobaia.
+
+Mas os testes falharam.
+
+A pressão do herói foi ao extremo.
+
+As veias estouraram.
+
+Os olhos tornaram-se líquido negro.
+</div>
+</div>
+
+<div class="page">
+<div class="chapter">
+O herói e a benção divina
+<div class="status success">✦ SINAL DE SUCESSO ✦</div>
+</div>
+
+<div class="content">
+Rubra.
+
+A substância fornecida pelos Iron estabilizou parcialmente o herói.
+
+Seu corpo era apenas carne destruída.
+
+Ainda assim ele sobrevivia.
+
+Uma ocultista invocou sigilos de conhecimento.
+
+Então o corpo do herói foi reconstruído.
+
+Enquanto existir um fio de vida...
+
+Nós o traremos de volta.
+</div>
+</div>
+
+<div class="page torn">
+</div>
+
+<div class="page blood glitch">
+<div class="chapter">
+O h i demon ataca a v
+<div class="status fail">✦ SINAL DE FALHA ✦</div>
+</div>
+
+<div class="content">
+A contenção do zumbi de sangue falhou.
+
+As tripas da assistente estão sendo comidas nesse momento.
+
+O herói observa diretamente para a criatura.
+
+O zumbi está se curvando.
+
+Virando sangue novamente.
+</div>
+</div>
+
+<div class="page">
+<div class="chapter">
+O treino do herói
+<div class="status success">✦ SINAL DE SUCESSO ✦</div>
+</div>
+
+<div class="content">
+A membrana tornou-se instável.
+
+Os sistemas de segurança falham diariamente.
+
+Estamos sintetizando peculiaridades paranormais em seu corpo.
+
+O genoma dele aceita mutações de forma assustadora.
+</div>
+</div>
+
+<div class="page">
+<div class="chapter">
+O herói no Reino demoníaco
+<div class="status success">✦ SINAL DE SUCESSO ✦</div>
+</div>
+
+<div class="content">
+Eureka.
+
+Conseguimos estabilizar parcialmente sua mente deteriorada.
+
+Um fluxo tenebroso brota de seu peito.
+
+Charlotte insiste que devemos continuar tratando o herói como uma criança.
+
+Discordo.
+
+Mas não podemos perder sua confiança.
+</div>
+</div>
+
+<div class="page blood glitch">
+<div class="chapter">
+A página treme.
+</div>
+
+<div class="content">
+A página parece perdida no tempo.
+
+O papel respira.
+
+Algo observa do outro lado.
+</div>
+</div>
+
+<div class="page end">
+<div class="chapter">
+O herói derrota o rei demônio
+<div class="status fail">✦ SINAL DE FALHA ✦</div>
+</div>
+
+<div class="content">
+Hoje é o último dia.
+
+Entraremos na sala de transcendência em dezessete minutos.
+
+Talvez eu tenha gostado de escrever isso.
+
+Se existir um depois...
+</div>
+</div>
+
+<div class="page cover">
+<h1>
+✶ FIM ✶
+</h1>
+</div>
+
+</div>
+
+<div class="hint">
+Arraste as páginas para interagir com o livro
+</div>
+
+<script>
+
+const pageFlip = new St.PageFlip(document.getElementById('book'), {
+width: 500,
+height: 700,
+size: 'stretch',
+minWidth: 315,
+maxWidth: 1200,
+minHeight: 420,
+maxHeight: 1600,
+showCover: true,
+mobileScrollSupport: false,
+swipeDistance: 25,
+maxShadowOpacity: 0.6,
+flippingTime: 1100,
+usePortrait: true,
+autoSize: true,
+drawShadow: true,
+startPage: 0,
+});
+
+pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+
+</script>
+
+</body>
+</html>
